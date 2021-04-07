@@ -8,6 +8,7 @@ buildscript {
                 includeModule("org.jetbrains.trove4j", "trove4j")
             }
         }
+        maven { url 'https://jitpack.io' }
     }
 
     dependencies {
@@ -27,6 +28,8 @@ subprojects {
                 includeModule("org.jetbrains.trove4j", "trove4j")
             }
         }
+        maven { url 'https://jitpack.io' }
+
     }
 
     version = '4.2.0'
@@ -34,4 +37,8 @@ subprojects {
 
     ext.androidTargetSdk = 28
     ext.zxingCore = 'com.google.zxing:core:3.4.0'
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
