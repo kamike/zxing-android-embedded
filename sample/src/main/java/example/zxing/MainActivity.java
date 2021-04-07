@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.google.zxing.client.android.Intents;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+import com.journeyapps.barcodescanner.CaptureActivity;
 import com.mikepenz.aboutlibraries.LibsBuilder;
 
 
@@ -75,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void scanContinuous(View view) {
-        Intent intent = new Intent(this, ContinuousCaptureActivity.class);
+//        Intent intent = new Intent(this, ContinuousCaptureActivity.class);
+        Intent intent = new Intent(this, CaptureActivity.class);
         startActivity(intent);
     }
 

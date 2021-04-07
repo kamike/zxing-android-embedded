@@ -17,7 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContinuousCaptureActivity"></activity>
+        <activity
+            android:name=".ContinuousCaptureActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AnyOrientationCaptureActivity"
             android:screenOrientation="fullSensor"
@@ -45,8 +47,8 @@
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
             android:name=".TabbedScanning"
-            android:theme="@style/Theme.AppCompat"
-            android:label="@string/title_activity_tabbed_scanning"></activity>
+            android:label="@string/title_activity_tabbed_scanning"
+            android:theme="@style/Theme.AppCompat"></activity>
     </application>
 
 </manifest>
