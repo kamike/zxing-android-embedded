@@ -29,10 +29,12 @@ if (secretPropsFile.exists()) {
 
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project.zxingCore
 //    api project.zxingCore
-    api('com.google.zxing:core:3.4.1') {
-        transitive = true
-    }
+//    api('com.google.zxing:core:3.4.1') {
+//        transitive = true
+//    }
 
     api 'androidx.legacy:legacy-support-v4:1.0.0'
 
