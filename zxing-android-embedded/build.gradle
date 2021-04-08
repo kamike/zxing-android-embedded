@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.kamike'
-
+group = 'com.github.kamike'
 
 
 // Publishing config from https://getstream.io/blog/publishing-libraries-to-mavencentral-2021/
@@ -30,12 +29,14 @@ if (secretPropsFile.exists()) {
 
 
 dependencies {
-    api project.zxingCore
+//    api project.zxingCore
 
     api 'androidx.legacy:legacy-support-v4:1.0.0'
 
     testImplementation 'junit:junit:4.13'
     testImplementation "org.mockito:mockito-core:1.9.5"
+
+    api 'com.google.zxing:core:3.4.1'
 }
 
 android {
