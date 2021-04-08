@@ -30,7 +30,9 @@ if (secretPropsFile.exists()) {
 
 dependencies {
 //    api project.zxingCore
-    api 'com.google.zxing:core:3.4.1'
+    api('com.google.zxing:core:3.4.1') {
+        transitive = true
+    }
 
     api 'androidx.legacy:legacy-support-v4:1.0.0'
 
